@@ -31,15 +31,15 @@
   justify-content: center;
   height: 400px;
   line-height: 150%;
-  perspective: 600px;
+  perspective: 800px;
   text-align: justify;
 }
 
 .present .crawl {
   position: absolute;
   top: 9999px;
-  transform-origin: 150% 200%;
-  animation: crawl 120s linear;
+  transform-origin: 0% 100%;
+  animation: crawl 160s linear;
 }
 
 .message {
@@ -61,7 +61,19 @@
   background-image: url('../img/right-message.png');
 }
 
-.message span {
+.thinking {
+  position: absolute;
+  top: 100px;
+  right: 170px;
+  width: 320px;
+  height: 247px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/cloud.png');
+}
+
+.message span,
+.thinking span {
   display: flex;
   justify-content: center;
   align-items: center;
