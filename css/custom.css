@@ -1,0 +1,50 @@
+
+/* DEV WARS STYLES */
+
+@font-face {
+    font-family: 'starjhol';
+    src: url('../fonts/starjhol-webfont.woff2') format('woff2'),
+         url('../fonts/starjhol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.reveal h1 {
+  font-family: 'starjhol';
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 400px;
+  line-height: 150%;
+  perspective: 600px;
+  text-align: justify;
+}
+
+.present .crawl {
+  position: absolute;
+  top: 9999px;
+  transform-origin: 150% 200%;
+  animation: crawl 120s linear;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
