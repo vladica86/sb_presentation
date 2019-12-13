@@ -51,6 +51,19 @@
   background-repeat: no-repeat;
 }
 
+.message.a {
+  left: -20px;
+  top: 300px;
+  width: 200px;
+  height: 136px;
+  background-size: contain;
+  background-image: url('../img/left-message.png');
+}
+
+.message.a span {
+  font-size: 20px;
+}
+
 .message.left {
   left: 280px;
   background-image: url('../img/left-message.png');
