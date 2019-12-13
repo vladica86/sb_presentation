@@ -22,6 +22,10 @@
 }
 
 .star-wars {
+  display: none;
+}
+
+.present .star-wars {
   display: flex;
   position: relative;
   justify-content: center;
@@ -36,6 +40,37 @@
   top: 9999px;
   transform-origin: 150% 200%;
   animation: crawl 120s linear;
+}
+
+.message {
+  position: absolute;
+  top: 280px;
+  width: 299px;
+  height: 204px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.message.left {
+  left: 280px;
+  background-image: url('../img/left-message.png');
+}
+
+.message.right {
+  right: 280px;
+  background-image: url('../img/right-message.png');
+}
+
+.message span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 24px;
 }
 
 @keyframes crawl {
