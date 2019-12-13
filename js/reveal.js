@@ -268,7 +268,7 @@
 			pdfPageHeightOffset: -1,
 
 			// Number of slides away from the current that are visible
-			viewDistance: 3,
+			viewDistance: 2,
 
 			// The display mode that will be used to show slides
 			display: 'block',
@@ -277,7 +277,7 @@
 			hideInactiveCursor: true,
 
 			// Time before the cursor is hidden (in ms)
-			hideCursorTime: 5000,
+			hideCursorTime: 1000,
 
 			// Script dependencies to load
 			dependencies: []
