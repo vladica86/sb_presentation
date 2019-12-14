@@ -13,6 +13,52 @@
   font-family: 'starjhol';
 }
 
+.reveal .bullets {
+  padding: 50px;
+  background: rgba(0, 0, 0, .7);
+}
+
+.reveal .bullets h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.reveal .bullets ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.reveal .bullets ul li {
+  margin-bottom: 30px;
+  padding-left: 80px;
+  font-size: 25px;
+  color: #aaa;
+}
+
+.reveal .bullets ul li.current-fragment {
+  color: #fff;
+  position: relative;
+}
+
+.reveal .bullets ul li.current-fragment:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -25px;
+  width: 60px;
+  height: 51px;
+  background-image: url('../img/shuttle-bullet.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: bullet .5s linear;
+}
+
 .fade {
   position: relative;
   width: 100%;
@@ -106,5 +152,14 @@
   100% { 
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+@keyframes bullet {
+  0% {
+    left: -200px;
+  }
+  100% { 
+    left: 0;
   }
 }
